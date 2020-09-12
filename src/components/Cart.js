@@ -4,9 +4,10 @@ import styled from "styled-components"
 const CartComponent = styled.div `
 position: fixed;
   bottom: 0;
-  width: 97%;
+  width: 94%;
   margin-left: -4px;
   margin-right: 200px;
+  z-index: 1;
 `
 
 const CartContainer = styled.div `
@@ -26,11 +27,13 @@ color: white;
 
 const PriceCart = styled.div `
 color: white;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 14px;
 `
 
 const Ongkir = styled.div `
 font-size: 12px;
+
 `
 
 const CartIcon = styled.div`
@@ -57,7 +60,7 @@ const Cart = () => {
                     </Ongkir>
                 </CartInfo>
                 <CartIcon>
-                    <span class="material-icons">
+                    <span class="material-icons md-24">
                         shopping_cart
                     </span>
                     <span class="material-icons">

@@ -9,15 +9,15 @@ body {
 }
 
 .main {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-16 { font-size: 16px; }
 .material-icons.md-12 { font-size: 12px; }
-.material-icons.orange600 { color: #FB8C00; }
+.material-icons.orange600 { color: #f9423a; }
 
 .header {
   position: sticky;
@@ -52,23 +52,36 @@ body {
 .selected-address {
   display: flex;
   flex-direction: row;
+  align-items: center;
   cursor: pointer;
 }
 
 .address {
   font-weight: 600;
-  
+  font-size: 16px;
+  color: #424749;
 }
 
 .address-title {
   margin-top: 16px;
-  color: grey;
+  color: #6e7679;
   font-size: 8px;
+  font-weight: 500;
 }
 
 .date-picker {
   margin-left: 8px;
   margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  
+}
+
+.date-box {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 4px;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -110,41 +123,52 @@ body {
   cursor: pointer;
 }
 
-.date-picker{
+.date-box{
   border-bottom: solid 1px #f1f1f2;
   -ms-overflow-style: none; 
   scrollbar-width: none;
 }
 
-.date-picker::-webkit-scrollbar {
+.date-box::-webkit-scrollbar {
   display: none;
 }
 
 .day-date {
+  
+ 
+  margin: 4px 4px;
+ background-color: #424749;
+ border-radius: 50%;
+}
+
+.box {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  border-radius: 50%;
-  margin: 4px 16px;
-  width: 48px;
-  height: 48px;
 }
 
 .day {
   font-size: 8px;
-  
+  color: #424749;
 }
 
 .date {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: -2px;
+  color: #424749;
 }
 
 .date-now {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 
@@ -168,7 +192,7 @@ img {
 
 
 .rating-value {
-  font-size: 12px;
+  font-size: 14px;
   color: #6e7679;
   font-weight: 700;
   
@@ -178,6 +202,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2px;
   margin-bottom: 8px;
   margin-left: 8px;
 }
@@ -237,13 +262,14 @@ img {
 }
 
 .modal-title {
-  margin: 8px;
-  font-size: 24px;
-  font-weight: 500;
+  margin-left: 16px;
+  margin-right: 96px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .search-bar-modal {
-  margin: 8px;
+  margin: 16px;
   border: solid 2px #f1f1f2;
   display: flex;
   flex-direction: row;
@@ -264,9 +290,9 @@ img {
 
 .search-result {
   display: flex;
-  margin: 8px;
+  margin: 16px;
   flex-direction: column;
-  height: 320px;
+  height: 510px;
 }
 
 .result-icon {

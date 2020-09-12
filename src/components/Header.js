@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styled from "styled-components"
 import Tabs from './tabs/Tabs'
 import useScrollDirection from '../hooks/useScrollDirection'
 import Modal from 'react-bootstrap/Modal'
@@ -9,18 +10,17 @@ function Header() {
 
     const [show, setShow] = useState(false);
     const [searchQuery, setSearchQuery] = useState('')
-    const selectedDay = (val) => {
-        console.log(val)
-    };
+   
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const queryInput = (e) => {
         setSearchQuery(e.target.value)
     }
 
+    
+
     return (
         <div className="header">
-            
             <div className="header-nav-delivery">
                 <div className="back-icon">
                     <i class="material-icons md-36">
@@ -35,16 +35,18 @@ function Header() {
                         <div className="address">
                             Tokopedia Tower
             </div>
-                        <i class="material-icons md-12 orange600">
+                        <i class="material-icons md-24 orange600">
                             keyboard_arrow_down
             </i>
                     </div>
                 </div>
             </div>
-            <div className="date-picker">
+            <div className='date-picker'>
+
             <Calendar></Calendar>
             </div>
-            {scrollDirection == 'down' ? <></> : <Tabs></Tabs>}
+
+            {scrollDirection == 'down' ? <></> : <Tabs></Tabs>} 
             <div className="modal-test">
                 <Modal show={show} onHide={handleClose}>
                     <div className="modal-screen">

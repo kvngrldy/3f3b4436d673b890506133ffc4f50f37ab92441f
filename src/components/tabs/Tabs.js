@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 const TabsLunchDinner = styled.div `
 margin-top: 8px;
-margin-left: 8px;
-  margin-right: 8px;
+margin-left: 16px;
+  margin-right: 16px;
   display: flex;
   flex-direction: row;
   background-color: transparent;
@@ -20,8 +20,8 @@ const Tab = styled.div `
   align-items: center;
   justify-content: center;
   
-  ${({ active }) => active == false && `
-  border: solid 1px #f1f1f2;
+  ${({ active }) => active === false && `
+  border: solid 2px #f1f1f2;
 `}
 
   ${({ active }) => active && `
@@ -33,8 +33,8 @@ const Tab = styled.div `
 const TabsFont = styled.div `
 
 font-size: 14px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
     font-weight: 500;
   color: ${props => props.active ? 'white' : '#6e7679'};
 `
@@ -55,7 +55,7 @@ const handleDinner = () => {
 
     return (
         <TabsLunchDinner>
-            <Tab active={lunch} sad onClick={() => handleLunch()}>
+            <Tab active={lunch} onClick={() => handleLunch()}>
                 <TabsFont active={lunch}>
                     Lunch
                 </TabsFont>

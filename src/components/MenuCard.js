@@ -13,10 +13,10 @@ background-color: #f1f1f2;
 `
 
 const CardImg = styled.div`
-height: 200px;
+height: 250px;
 `
 const CardInfo = styled.div`
- margin: 8px;
+ margin: 8px 16px;
 `
 
 const MenuName = styled.div`
@@ -28,7 +28,7 @@ font-size: 14px;
 const Seller = styled.div`
 font-size: 12px;
   color: grey;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-weight: 500;
 `
 
@@ -43,7 +43,7 @@ display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 `
 
 const AddToCartButton = styled.button`
@@ -74,7 +74,7 @@ const MenuCard = () => {
         <div>
             <Card>
                 <CardImg>
-                    <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="Girl in a jacket" />
+                    <img src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="Hamburger" />
                 </CardImg>
                 <CardInfo>
                     <Rating>
@@ -92,7 +92,7 @@ const MenuCard = () => {
                         Roasted Chicken with Scrambled Egg
                     </MenuName>
                     <Seller>
-                        by Kulina - Uptown Lunch
+                        by Kulina • Uptown Lunch
                      </Seller>
                     <PriceMenu>
                         <div className="info-item-price">
